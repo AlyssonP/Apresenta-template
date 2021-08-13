@@ -46,7 +46,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="examples/score.html">
+              <a class="nav-link active" href="score.html">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Score</span>
               </a>
@@ -64,7 +64,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="tables.html">
+              <a class="nav-link" href="tables.html">
                 <i class="ni ni-bullet-list-67 text-default"></i>
                 <span class="nav-link-text">Tables</span>
               </a>
@@ -143,8 +143,9 @@
       <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!-- Search form -->
-          <div class="navbar-nav ml-auto ml-md-0 " align-items="fixed-rigth">
-            <div class="nav-item dropdown">
+          <!-- tirei isso "align-items-center ml-auto ml-md-0" e coloquei ml-auto--><!--item user-->
+          <div class="navbar-nav ml-auto">
+            <div class="nav-item dropdown" >
               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <div class="media align-items-center">
@@ -156,7 +157,8 @@
                   </div>
                 </div>
               </a>
-              <div class="dropdown-menu  dropdown-menu-right ">
+              <!--menu user-->
+              <div class="dropdown-menu dropdown-menu-right ">
                 <div class="dropdown-header noti-title">
                   <h5 class="text-overflow m-0">Bem vindo</h5>
                 </div>
@@ -170,7 +172,6 @@
         </div>
       </div>
     </nav>
-    <!-- Header -->
     <!-- Header -->
     <div class="header bg-primary pb-6">
       <div class="container-fluid">
@@ -190,7 +191,7 @@
         </div>
       </div>
     </div>
-    <!-- Page content -->
+    <!-- Page content --><!-- Placar -->
     <div class="container-fluid mt--6">
       <div class="row">
         <div class="col">
@@ -201,20 +202,20 @@
             </div>
             <!-- Light table -->
             <div class="table-responsive">
-              <table class="table align-items-center table-flush">
+              <table class="table align-items-center table-flush table-striped">
                 <thead class="thead-light">
                   <tr>
                     <th scope="col" class="sort" data-sort="name">#</th>
-                    <th scope="col" class="sort" data-sort="budget">User</th>
-                    <th scope="col" class="sort" data-sort="status">Nome</th>
-                    <th scope="col">Questão 1</th>
+                    <th scope="col" class="sort" data-sort="name">User</th>
+                    <th scope="col" class="sort" data-sort="name">Nome</th>
+                    <th scope="col">Questões</th>
                     <th scope="col" class="sort" data-sort="status">Qtd Questões</th>
-                    <th scope="col" class="sort" data-sort="completion">Pontuação</th>
+                    <th scope="col" class="sort" data-sort="status">Pontuação</th>
                     <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody class="list">
-                  <!--Primeira linha-->
+                  <!-- Pontuação q1-150, q2-180, q3-200, q4-210 e q5-260 -->
                   <tr>
                     <!--colocação-->
                     <th scope="row">1</th>
@@ -227,109 +228,123 @@
                       <div class="avatar-group">
                         <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
                         data-original-title="Questão 1">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
+                          <img alt="Questão 1" src="../assets/img/baloes/balao_azul.png">
                         </span>
                         <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
                         data-original-title="Questão 2">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
+                          <img alt="Questão 2" src="../assets/img/baloes/balao_cinza.png">
                         </span>
                         <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
                         data-original-title="Questão 3">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
+                          <img alt="Questão 3" src="../assets/img/baloes/balao_roxo.png">
+                        </span>
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 5">
+                          <img alt="Questão 5" src="../assets/img/baloes/balap_vermelho.png">
                         </span>
                       </div>
                     </td>
-                    <td>3</td>
+                    <!--Qtd Questões-->
+                    <td>5</td>
+                    <!--Pontuação-->
+                    <td>790</td>
+                  </tr>
+                  <tr>
+                    <!--colocação-->
+                    <th scope="row">2</th>
+                    <!--ID User-->
+                    <td class="budget">129924</td>
+                    <!--Name User-->
+                    <td>Kauã</td>
+                    <!--Questões-->
                     <td>
-                      500
+                      <div class="avatar-group">
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 1">
+                          <img alt="Questão 1" src="../assets/img/baloes/balao_azul.png">
+                        </span>
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 2">
+                          <img alt="Questão 2" src="../assets/img/baloes/balao_cinza.png">
+                        </span>
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 3">
+                          <img alt="Questão 3" src="../assets/img/baloes/balao_roxo.png">
+                        </span>
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 4">
+                          <img alt="Questão 4" src="../assets/img/baloes/balao_verde.png">
+                        </span>
+                      </div>
+                    </td>
+                    <!--Qtd Questões-->
+                    <td>5</td>
+                    <!--Pontuação-->
+                    <td>740</td>
+                  </tr>
+                  <tr>
+                    <!--colocação-->
+                    <th scope="row">3</th>
+                    <!--ID User-->
+                    <td class="budget">202125</td>
+                    <!--Name User-->
+                    <td>Robert</td>
+                    <!--Questões-->
+                    <td>
+                      <div class="avatar-group">
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 1">
+                          <img alt="Questão 1" src="../assets/img/baloes/balao_azul.png">
+                        </span>
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 2">
+                          <img alt="Questão 2" src="../assets/img/baloes/balao_cinza.png">
+                        </span>
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 3">
+                          <img alt="Questão 3" src="../assets/img/baloes/balao_roxo.png">
+                        </span>
+                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
+                        data-original-title="Questão 4">
+                          <img alt="Questão 4" src="../assets/img/baloes/balao_verde.png">
+                        </span>
+                      </div>
+                    </td>
+                    <!--Qtd Questões-->
+                    <td>5</td>
+                    <!--Pontuação-->
+                    <td>
+                      740
                     </td>
                   </tr>
                   <tr>
                     <!--colocação-->
-                    <th scope="row">1</th>
+                    <th scope="row">4</th>
                     <!--ID User-->
-                    <td class="budget">123456</td>
+                    <td class="budget">202024</td>
                     <!--Name User-->
-                    <td>Alysson</td>
+                    <td>Fulano de tal</td>
                     <!--Questões-->
                     <td>
                       <div class="avatar-group">
                         <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
                         data-original-title="Questão 1">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
+                          <img alt="Questão 1" src="../assets/img/baloes/balao_azul.png">
                         </span>
                         <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
                         data-original-title="Questão 2">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
+                          <img alt="Questão 2" src="../assets/img/baloes/balao_cinza.png">
                         </span>
                         <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
                         data-original-title="Questão 3">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
+                          <img alt="Questão 3" src="../assets/img/baloes/balao_roxo.png">
                         </span>
                       </div>
                     </td>
-                    <td>3</td>
-                    <td>
-                      500
-                    </td>
-                  </tr>
-                  <tr>
-                    <!--colocação-->
-                    <th scope="row">1</th>
-                    <!--ID User-->
-                    <td class="budget">123456</td>
-                    <!--Name User-->
-                    <td>Alysson</td>
-                    <!--Questões-->
-                    <td>
-                      <div class="avatar-group">
-                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
-                        data-original-title="Questão 1">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
-                        </span>
-                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
-                        data-original-title="Questão 2">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
-                        </span>
-                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
-                        data-original-title="Questão 3">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
-                        </span>
-                      </div>
-                    </td>
-                    <td>3</td>
-                    <td>
-                      500
-                    </td>
-                  </tr>
-                  <tr>
-                    <!--colocação-->
-                    <th scope="row">1</th>
-                    <!--ID User-->
-                    <td class="budget">123456</td>
-                    <!--Name User-->
-                    <td>Alysson</td>
-                    <!--Questões-->
-                    <td>
-                      <div class="avatar-group">
-                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
-                        data-original-title="Questão 1">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
-                        </span>
-                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
-                        data-original-title="Questão 2">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
-                        </span>
-                        <span class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
-                        data-original-title="Questão 3">
-                          <img alt="Image placeholder" src="../assets/img/baloes/balao1.png">
-                        </span>
-                      </div>
-                    </td>
-                    <td>3</td>
-                    <td>
-                      500
-                    </td>
+                    <!--Qtd Questões-->
+                    <td>5</td>
+                    <!--Pontuação-->
+                    <td>530</td>
                   </tr>
                 </tbody>
               </table>
@@ -369,10 +384,15 @@
         <div class="row align-items-center justify-content-lg-between">
           <div class="col-lg-6">
             <div class="copyright text-center  text-lg-left  text-muted">
-              &copy; 2020 <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">Creative
-                Tim</a>
+              &copy; 2021 Os Garotos de Programa 
+              <!--
+              <a href="https://www.creative-tim.com" class="font-weight-bold ml-1" target="_blank">
+                Os Garotos de Programa
+              </a>
+              -->
             </div>
           </div>
+          <!--
           <div class="col-lg-6">
             <ul class="nav nav-footer justify-content-center justify-content-lg-end">
               <li class="nav-item">
@@ -390,6 +410,7 @@
               </li>
             </ul>
           </div>
+          -->
         </div>
       </footer>
     </div>
