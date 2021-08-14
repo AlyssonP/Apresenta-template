@@ -16,6 +16,8 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+
+
 :root
 {
     --blue: #5e72e4;
@@ -61,6 +63,11 @@
     box-sizing: border-box;
 }
 
+
+
+.collapse navbar-collapse{
+   background-color: var(--green);
+}
 html
 {
     font-family: sans-serif;
