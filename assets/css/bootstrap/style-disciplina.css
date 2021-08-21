@@ -1,6 +1,7 @@
 /*Gerais*/
 body{
     font-family: "Roboto", sans-serif;
+    background-color: rgb(221, 221, 221);
 }
 
 .row{
@@ -18,7 +19,7 @@ p, li{
 
 /*Estilo da Barra*/
 header, .navbar{
-    background-color: rgb(23, 194, 7);
+    background-color: rgba(16, 102, 8, 0.61);
 }
 
 #nav-container{
@@ -28,6 +29,10 @@ header, .navbar{
 
 #logo{
     width: 150px;
+}
+
+#logo:hover{
+    width:160px;
 }
 
 .navbar-brand{
@@ -42,17 +47,73 @@ header, .navbar{
 #navbar-links a{
     color: white;
 }
+#navbar-links a:hover{
+    color: black;
+    font-size: 20px;
+    font-weight:bolder;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 1rem .8rem;
 }
 
 /* Tabela */
-#tabela, tr{
-    border: 1px solid black;
+h4{
+    padding-left: 30px;
+}
+
+h5{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+button{
+    margin-top: 0px;
+    background-color: green;
+    border: none;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 8px;   
+    font-size: 14px; 
+    font-weight: bolder;
+}
+
+button:hover{
+    background-color: #cfd1cdcb;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+#tabela{
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0 auto;
     width: 1000px;
 }
-#tabela{
-    margin: 0 auto;
+
+#tipo-1 th{
+    background-color: rgba(243, 243, 243, 0.911);
+}
+
+#tipo-2 th{
+    background-color: gray;
+}
+
+#texto-direita{
+    text-align: right;
+}
+
+#area-tabela{
+    margin-top: 100px;
+    padding: 25px 0px 100px 0px; 
+    background-color: rgb(255, 255, 255);
+}
+
+/* Footer */
+p{
+    text-align: center;
 }
 
