@@ -47,3 +47,12 @@ header, .navbar{
     padding: 1rem .8rem;
 }
 
+/* Tabela */
+#tabela, tr{
+    border: 1px solid black;
+    width: 1000px;
+}
+#tabela{
+    margin: 0 auto;
+}
+
