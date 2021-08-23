@@ -17,10 +17,14 @@
     <!--NavBar-->
     <header>
         <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark" >
                 <a href="../index.html" class="navbar-brand">
                     <img src="../assets/img/theme/logo_laced.png" alt="Logo Laced" id="logo"> 
                 </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" id="runs-menu">Runs</a>
@@ -40,43 +44,48 @@
                         <a class="nav-item nav-link" id="logouts-menu">Logout</a>   
                     </div>
                 </div>
+                
             </nav>
         </div>
     </header>
     <!--Tabela-->
     <main>
         <div class="container" id="area-tabela">
-            <button>Criar</button>
+            <button id="butao-tabela">Criar</button>
             <h4>Lista de Disciplinas</h4>
             <table id="tabela">
-                <tr>
-                    <th><h5>Nome</h5></th>
-                    <th id="texto-direita"><h5>Opções</h5></th>
-                </tr>
-                <tr id="tipo-1">    
-                    <th>Python</th>
-                    <th id="texto-direita">Vis ED EX</th>
-                </tr>
-                <tr id="tipo-2">
-                    <th>Estrutura de Dados</th>
-                    <th id="texto-direita">//</th>
-                </tr>
-                <tr id="tipo-1">
-                    <th>//</th>
-                    <th id="texto-direita">//</th>
-                </tr>
-                <tr id="tipo-2">
-                    <th>//</th>
-                    <th id="texto-direita">//</th>
-                </tr>
-                <tr id="tipo-1">
-                    <th>//</th>
-                    <th id="texto-direita">//</th>
-                </tr>
-                <tr id="tipo-2">
-                    <th>//</th>
-                    <th id="texto-direita">//</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th><h5>Nome</h5></th>
+                        <th id="texto-direita"><h5>Opções</h5></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="tipo-1">    
+                        <td data-title="Nome">Python</td>
+                        <td data-title="Opções" id="texto-direita">Vis ED EX</td>
+                    </tr>
+                    <tr id="tipo-2">
+                        <td data-title="Nome">Estrutura de Dados</td>
+                        <td data-title="Opções" id="texto-direita">//</td>
+                    </tr>
+                    <tr id="tipo-1">
+                        <td data-title="Nome">//</td>
+                        <td data-title="Opções" id="texto-direita">//</td>
+                    </tr>
+                    <tr id="tipo-2">
+                        <td data-title="Nome">//</td>
+                        <td data-title="Opções" id="texto-direita">//</td>
+                    </tr>
+                    <tr id="tipo-1">
+                        <td data-title="Nome">//</td>
+                        <td data-title="Opções" id="texto-direita">//</td>
+                    </tr>
+                    <tr id="tipo-2">
+                        <td data-title="Nome">//</td>
+                        <td data-title="Opções" id="texto-direita">//</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </main>

@@ -48,6 +48,7 @@ header, .navbar{
  
 #navbar-links a{
     color: white;
+    transition: .5s;
 }
 #navbar-links a:hover{
     color: black;
@@ -70,8 +71,8 @@ h5{
     font-weight: bolder;
 }
 
-button{
-    background-color: green;
+#butao-tabela{
+    background-color: rgba(16, 102, 8, 0.61);
     border: none;
     padding: 5px 20px;
     text-align: center;
@@ -81,10 +82,11 @@ button{
     margin-right: 70px;
     display: inline;
     float: right;
+    transition: .5s;
 
 }
 
-button:hover{
+#butao-tabela:hover{
     background-color: #71c71ccb;
     color: white;
     padding: 5px 20px;
@@ -99,6 +101,7 @@ button:hover{
 }
 
 #tabela{
+    border-collapse: collapse;
     font-size: 13px;
     font-weight: normal;
     margin: 0 auto;
@@ -106,11 +109,15 @@ button:hover{
     width: 1000px;
 }
 
-#tipo-1 th{
+td{
+    position: relative;
+}
+
+#tipo-1 td{
     background-color: rgba(243, 243, 243, 0.911);
 }
 
-#tipo-2 th{
+#tipo-2 td{
     background-color: gray;
 }
 
@@ -122,5 +129,38 @@ button:hover{
 /* Footer */
 p{
     text-align: center;
+}
+
+/* Responsivo */
+@media all and (max-width: 800px){
+    table#tabela{
+        width: 300px;
+    }
+
+    table#tabela tbody tr td{
+        display: block;
+        text-align: right;
+    }
+    
+    table#tabela tbody tr td:before{
+        content: attr(data-title);
+        position: absolute;
+        left: 5px;
+        display: block;
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+    thead{
+        display: none;
+    }
+
+    table#tabela tbody tr{
+        margin-bottom: 10px;
+        display: block;
+        border: 1px solid;
+    }
+
+
 }
 
