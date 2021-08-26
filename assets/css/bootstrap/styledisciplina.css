@@ -28,13 +28,11 @@ header, .navbar{
 }
 
 #logo{
-    margin-left: 10px;
+    margin-left: 20px;
     width: 150px;
 }
 
-#logo:hover{
-    width:160px;
-}
+
 
 .navbar-brand{
     padding: 0;
@@ -82,7 +80,7 @@ h5{
     margin-right: 70px;
     display: inline;
     float: right;
-    transition: .5s;
+    transition: .3s;
 
 }
 
