@@ -111,13 +111,10 @@ td{
     position: relative;
 }
 
-#tipo-1 td{
-    background-color: rgba(243, 243, 243, 0.911);
+tr:nth-child(even){
+    background-color: lightgray;
 }
 
-#tipo-2 td{
-    background-color: gray;
-}
 
 #texto-direita{
     text-align: right;
