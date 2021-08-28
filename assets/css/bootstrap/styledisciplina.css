@@ -28,13 +28,11 @@ header, .navbar{
 }
 
 #logo{
-    margin-left: 10px;
+    margin-left: 20px;
     width: 150px;
 }
 
-#logo:hover{
-    width:160px;
-}
+
 
 .navbar-brand{
     padding: 0;
@@ -82,7 +80,7 @@ h5{
     margin-right: 70px;
     display: inline;
     float: right;
-    transition: .5s;
+    transition: .3s;
 
 }
 
@@ -113,13 +111,10 @@ td{
     position: relative;
 }
 
-#tipo-1 td{
-    background-color: rgba(243, 243, 243, 0.911);
+tr:nth-child(even){
+    background-color: lightgray;
 }
 
-#tipo-2 td{
-    background-color: gray;
-}
 
 #texto-direita{
     text-align: right;
